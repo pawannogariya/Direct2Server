@@ -165,7 +165,7 @@ a.button span {
   margin-right: 0;
 }
 
-code, pre {
+/*code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
   color: #222;
   margin-bottom: 30px;
@@ -190,7 +190,7 @@ pre code {
   background-color: #303030;
   border: none;
   padding: 0;
-}
+}*/
 
 ul, ol, dl {
   margin-bottom: 20px;
