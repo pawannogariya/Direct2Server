@@ -133,7 +133,7 @@ $(document).ready(function () {
     };
 
     Direct2Server.getGetUrl = function ($elementX, baseUrl) {
-        var url = '';
+        var url = baseUrl;
         if ($elementX.attr('getarguments') !== undefined) {
 
             var getMethodReference = window[$elementX.attr('getarguments')];
@@ -149,10 +149,10 @@ $(document).ready(function () {
             for (var x in getArguments) {
                 if (getArguments.hasOwnProperty(x)) {
                     if (count == 0) {
-                        url = baseUrl + '?' + x + '=' + getArguments[x];
+                        url = url + '?' + x + '=' + getArguments[x];
                         count++;
                     } else {
-                        url = baseUrl + '&' + x + '=' + getArguments[x];
+                        url = url + '&' + x + '=' + getArguments[x];
                     }
                 }
             }
