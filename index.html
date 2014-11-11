@@ -121,8 +121,25 @@
 </pre></div>
 
 
+
                 </div>
+                <p>Or accepts class object like this</p>
                 
+                <div class="code">
+                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #0000ff">class</span> <span style="color: #2b91af">Person</span>
+{
+    <span style="color: #0000ff">public</span> <span style="color: #2b91af">string</span> Name { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
+    <span style="color: #0000ff">public</span> <span style="color: #2b91af">int</span> Age { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
+}
+
+<span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> HiServer(<span style="color: #2b91af">Person</span> person)
+{
+    <span style="color: #2b91af">string</span> receivedName = person.Name;
+    <span style="color: #2b91af">int</span> receivedAge = person.Age;
+}
+</pre></div>
+
+                </div>
                 <p>To pass data to this method, just define a client function which will return the object with arguments values</p>
                     
                 <div class="code">
