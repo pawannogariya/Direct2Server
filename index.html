@@ -68,10 +68,10 @@
                             <div class="code">
                                <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #0000ff">class</span> <span style="color: #2b91af">HomeController</span> : Controller
 {
-    <span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> HiServer()
-    {
+      <span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> HiServer()
+      {
             
-    }
+      }
 }
 </pre></div>
 
@@ -79,7 +79,7 @@
 
                             </div>
                             
-                            <p>You can call it directly by just using attribute <strong>onAjaxServerClick</strong> like this</p>
+                            <p>You can call it directly by just using attribute <strong>onAjaxServerClick</strong>  and passing the method reference with controller class name, like this</p>
                             <div class="code">
                     <!-- HTML generated using hilite.me -->
                     <div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .5em .6em;">
@@ -115,8 +115,8 @@
                 <div class="code">
                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> HiServer(<span style="color: #2b91af">string</span> name, <span style="color: #2b91af">int</span> age)
 {
-    <span style="color: #2b91af">string</span> receivedName = name;
-    <span style="color: #2b91af">int</span> receivedAge = age;
+      <span style="color: #2b91af">string</span> receivedName = name;
+      <span style="color: #2b91af">int</span> receivedAge = age;
 }
 </pre></div>
 
@@ -126,16 +126,16 @@
                 <p>Or accepts class object like this</p>
                 
                 <div class="code">
-                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #0000ff">class</span> <span style="color: #2b91af">Person</span>
+                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #0000ff">class</span> <span style="color: #2b91af">Person</span>
 {
-    <span style="color: #0000ff">public</span> <span style="color: #2b91af">string</span> Name { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
-    <span style="color: #0000ff">public</span> <span style="color: #2b91af">int</span> Age { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
+      <span style="color: #0000ff">public</span> <span style="color: #2b91af">string</span> Name { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
+      <span style="color: #0000ff">public</span> <span style="color: #2b91af">int</span> Age { <span style="color: #0000ff">get</span>; <span style="color: #0000ff">set</span>; }
 }
 
 <span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> HiServer(<span style="color: #2b91af">Person</span> person)
 {
-    <span style="color: #2b91af">string</span> receivedName = person.Name;
-    <span style="color: #2b91af">int</span> receivedAge = person.Age;
+      <span style="color: #2b91af">string</span> receivedName = person.Name;
+      <span style="color: #2b91af">int</span> receivedAge = person.Age;
 }
 </pre></div>
 
@@ -143,18 +143,18 @@
                 <p>Just define a client function which will return the object with same arguments to pass data to server function</p>
                     
                 <div class="code">
-                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">&lt;script type=<span style="color: #a31515">&quot;text/javascript&quot;</span>&gt;
+                    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%">&lt;script type=<span style="color: #a31515">&quot;text/javascript&quot;</span>&gt;
 
   <span style="color: #0000ff">function</span> serverArguments() {
 
-      <span style="color: #0000ff">var</span> arg = <span style="color: #0000ff">new</span> Object();
-      arg.name = <span style="color: #a31515">&quot;Client&quot;</span>;
-      arg.age = 20;
+       <span style="color: #0000ff">var</span> arg = <span style="color: #0000ff">new</span> Object();
+       arg.name = <span style="color: #a31515">&quot;Client&quot;</span>;
+       arg.age = 20;
 
-      <span style="color: #0000ff">return</span> arg;
+       <span style="color: #0000ff">return</span> arg;
   }
 
-&lt;<span style="border: 1px solid #FF0000">/script&gt;</span>
+&lt;<span >/script&gt;</span>
 </pre></div>
 
 
@@ -205,11 +205,10 @@
                 <div class="code">
                     <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">public</span> <span style="color: #2b91af">string</span> HiServer(<span style="color: #2b91af">string</span> client)
 {
+      <span style="color: #008000">// json response</span>
+      <span style="color: #0000ff">return</span> <span style="color: #a31515">&quot;{\&quot;Message\&quot;:\&quot;Hi &quot;</span> + client + <span style="color: #a31515">&quot; \&quot;}&quot;</span>;
 
-    <span style="color: #008000">// json response</span>
-    <span style="color: #0000ff">return</span> <span style="color: #a31515">&quot;{\&quot;Message\&quot;:\&quot;Hi &quot;</span> + client + <span style="color: #a31515">&quot; \&quot;}&quot;</span>;
-
-    <span style="color: #008000">// or use any serializer that will convert your object response to json string </span>
+      <span style="color: #008000">// or use any serializer that will convert your object response to json string </span>
 }
 </pre></div>
 
@@ -219,7 +218,7 @@
                 
                 <div class="code">
                     <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.5em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">function</span> successHandler(response) {
-    alert(<span style="color: #a31515">&#39;Message received from server - &#39;</span> + response.Message);
+      alert(<span style="color: #a31515">&#39;Message received from server - &#39;</span> + response.Message);
 }
 </pre></div>
 
